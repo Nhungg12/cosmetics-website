@@ -1,0 +1,562 @@
+/*
+Theme Name: Avine
+Author: Themes Daddy
+Author URI: https://themesdaddy.com/
+Theme URI: https://themesdaddy.com/themes/avine-free/
+Description: Lightning Fast Speed & Responsive Theme. Avine is a responsive and fully customizable theme to create any kind of websites. The advanced admin panel will enable you to customize it without any technical knowledge. This theme is lightweight, it will enable you to create almost any type of website such a blog, portfolio, acting and shooting industry, total trendy news, newspaper, mega magazine, fashion, dark themes, petcare, animals wildlife, wooden architecture, plumbing contractor, painting estate, interior design, rooms furniture, home decoration, green floral nature, construction, corporate, multiple agency, business promotion, dark variation, industries, Beauty & spa salons, photography, gym, fitness, health, medical, startups, business agencies, law firms, travel, NGO, charity, yoga, kids education, training institute, university portal, restaurant, meta shop, quick magazines, mutual fund, finance, accounting, consulting ,travel agency website. Theme is fully compatible with popular WordPress plugins like Elementor Page Builder, Slider, Carousal, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, Gutenberg, Block-Enabled, WooCommerce, WPML, Yoast SEO, Shortcode, Jetpack, Contact Form 7, Mailchimp for WordPress, bbPress, Demo Importer, WPForms and more. Your WordPress website will never be let down with this theme. View the demo of Avine Pro https://demo.themesdaddy.com/avine-pro/
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets, post-formats, theme-options, threaded-comments, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, e-commerce, portfolio
+Version: 1.0.8
+Tested up to: 6.5.2
+Requires PHP: 5.4
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GNU General Public License v2 or later
+Text Domain: avine
+Slug: avine
+Template: flixita
+*/
+
+
+:root {
+    --bs-primary: #ff6005;
+    --bs-primary-dark:#e85704;
+    --bs-primary-light: #f16b1e73;
+    --bs-primary-shadow:rgb(0 123 255 / 0.5);
+    --bs-secondary:#214462;
+    --bs-secondary-dark: #000000; 
+}
+
+.avine-theme .navbar-area {
+    justify-content: space-between;
+}
+
+
+@media (min-width: 992px) {
+    .avine-theme .main-header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        border-top: 0;
+        margin: 0 auto;
+        z-index: 99;
+        background: transparent;
+    }
+    
+     body.avine-theme.admin-bar .main-header {
+        top: 32px;
+    }
+    
+    .avine-theme .above-header {
+        background: transparent;
+		border-bottom: none;
+    }
+
+    .avine-theme .above-header:before,
+    .avine-theme .above-header:after   {
+        display:none
+    }
+    
+    .avine-theme .navigation-wrapper {
+        border-bottom: none;
+    }
+
+    .avine-theme .home-slider, .avine-theme .home-slider .owl-item img {
+        min-height: 750px;
+        object-fit: cover;
+    }
+    .avine-theme .main-slider div.main-content {
+        margin-top: 10rem;
+        margin-bottom: 6rem;
+    }
+    
+    .avine-theme .slider-section + .info-section-2 {
+        margin-top: -3.55rem;
+    }
+    .avine-theme .breadcrumb-area {
+        min-height: 360px;
+    }
+    .avine-theme .breadcrumb-center .breadcrumb-content {
+        padding: 200px 0 0;
+    }
+	.avine-theme .main-content h4 {
+		font-size: 1.2rem;
+	}
+}
+
+.avine-theme .main-menu-right {
+    background: var(--bs-secondary);
+    margin-right: -12px;
+    padding-right: 20px;
+}
+
+.avine-theme .main-navigation > .row {
+    background: #fff;
+}
+
+.avine-theme .main-navigation > .container > .row {
+    background: #fff;
+}
+
+.avine-theme .main-navbar:not(.breadcrumb-menu) .main-menu > li > a,
+.avine-theme .main-menu-right > ul > li {
+    line-height: 5.2rem;
+}
+
+.avine-theme .main-menu-right > ul > li {
+    min-height: 5.25rem;
+}
+
+.avine-theme .main-navigation {
+    min-height: 84px;
+}
+
+.avine-theme .main-navigation .main-navbar .main-menu > li.menu-item:not(.focus):not(.active):not(:hover) > a:not(:focus):not(:hover) {
+    color: var(--bs-secondary);
+}
+
+.avine-theme .main-navigation .main-navbar .main-menu > li.dropdown > a:before {
+    color: var(--bs-secondary);
+    right: 2px;
+}
+
+.avine-theme .main-navbar .main-menu > li.menu-item > a:after {
+    height: 5px;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.avine-theme .main-content h1 .primary {
+		font-size: 2.5rem;
+	}
+}
+
+.avine-theme .main-content h4 {
+    border: none;
+    color: var(--bs-primary);
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #FFEAE6 0%, #FFEAE6 100%);
+	padding: 5px 20px 5px 20px;
+	border-radius:50px;
+	display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.avine-theme .main-content h4 .stdot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50px;
+    display: inline-block;
+    background: var(--bs-primary);
+}
+
+.avine-theme .main-content h4:before {
+   display:none;
+}
+
+.avine-theme .info-section-2 {
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+@media (max-width: 767px){
+    .avine-theme .info-section-2 {
+        margin-top: 80px;
+    }
+    .avine-theme .info-section-2 .widget-contact {
+        margin-bottom: 40px;
+    }
+}
+
+.avine-theme .info-section-2 .feature-box-icon {
+    margin-bottom: 1rem;
+    border: 2px dashed var(--bs-primary);
+    width: 95px;
+    height: 95px;
+    text-align: center;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	-webkit-transition: var(--bs-transition);
+    transition: var(--bs-transition);
+}
+
+.avine-theme .info-section-2 .widget-contact:hover .feature-box-icon {
+    border-color: var(--bs-white);
+}
+
+.avine-theme .info-section-2 .feature-box-icon i{
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background-color: var(--bs-primary);
+    text-align: center;
+    border-radius: 50%;
+    color: var(--bs-white);
+    transition: 0.8s;
+}
+
+
+.avine-theme .info-section-2 .widget-contact:hover .feature-box-icon i {
+    background: var(--bs-white);
+    color: var(--bs-primary);
+}
+
+.avine-theme .info-section-2 .widget-contact {
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    padding: 30px;
+}
+
+.avine-theme .info-section-2 .widget-contact:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bs-white);
+    z-index: -9;
+    transform: skewY(10deg);
+    border-radius: 30px;
+    box-shadow: 0 10px 35px 0 rgba(92.99999999999996, 72.00000000000001, 223, .08);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.avine-theme .info-section-2 .widget-contact .more.read-more {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    background: linear-gradient(115deg, var(--bs-primary), var(--bs-primary), var(--bs-primary));
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--bs-white);
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: -40px;
+    border: 10px solid var(--bs-white);
+    background-size: 150% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+	z-index: 1;
+}
+
+.avine-theme .info-section-2 .widget-contact .fbox-content {
+    margin-bottom: 2rem;
+}
+
+.avine-theme .info-section-2 .widget-contact:hover:before {
+    transform: skewY(-10deg);
+    
+}
+
+
+.avine-theme .info-section-2 .feature-box-img {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 80px;
+    height: 80px;
+    transition: .5s;
+    opacity: 0;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 30px;
+    transform: scale(1) skewY(-10deg);
+}
+
+.avine-theme .info-section-2 .feature-box-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.avine-theme .info-section-2 .widget-contact:hover .feature-box-inner {
+    z-index: 2;
+    color: var(--bs-white);
+}
+    
+.avine-theme .info-section-2 .widget-contact:hover .feature-box-img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.avine-theme .info-section-2 .widget-contact:hover:after {
+    transform: scale(1) skewY(-10deg);
+}
+.avine-theme .info-section-2 .widget-contact:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--bs-primary) 50%,transparent);
+    z-index: 0;
+    transform: scale(0) skewY(10deg);
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out 0s;
+    opacity: 0.7;
+}
+
+
+.avine-theme .info-section-2 .side-border-lines {
+    border-radius: 30px;
+    transform: skewY(10deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.avine-theme .info-section-2 .widget-contact:hover .side-border-lines {
+    transform: skewY(-10deg);
+}
+
+.avine-theme .info-section-2 .widget-contact:hover .more.read-more {
+    transform: rotate(360deg);
+}
+
+.avine-theme .service-section {
+    padding: 8.75rem 0;
+}
+
+.avine-theme .service-content {
+    padding: 4.5rem 1.563rem 2.188rem;
+	z-index: 2;
+    position: relative;
+}
+
+.avine-theme .service-inner:hover .service-icon-img-wrap:after{
+	display:none;
+}
+.avine-theme .service-icon-img-wrap {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--bs-primary);
+    text-align: center;
+    margin: 0px;
+    box-shadow: none;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.avine-theme .service-inner .service-title {
+    text-align: left;
+}
+
+.avine-theme .service-inner .service-content {
+    text-align: left;
+}
+.avine-theme .service-inner h3.service-title {
+    font-size: 22px;
+    margin: 15px 0px !important;
+}
+
+.avine-theme .service-excerpt p {
+	position: relative;
+	margin-bottom: 25px;
+}
+.avine-theme .service-icon-img-wrap:after{
+    border: 4px dashed var(--bs-white);
+}
+
+.avine-theme .service-section .service-box {
+    position: relative;
+}
+
+.avine-theme .service-section .service-img {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 80px;
+    height: 80px;
+    transition: .5s;
+    opacity: 0;
+    z-index: -1;
+}
+
+.avine-theme .service-section .service-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.avine-theme .service-section .service-inner:hover .service-img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+}
+
+.avine-theme .service-inner:hover .service-title a, 
+.avine-theme .service-inner:hover .service-excerpt p, 
+.avine-theme .service-inner:hover .post-more a {
+    color: var(--bs-white);
+}
+
+
+.avine-theme .service-section .service-inner {
+    position: relative;
+	border-bottom: none;
+}
+
+.avine-theme .service-inner::before {
+    content: '';
+    position: absolute;
+    height: 42%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: 99;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    opacity: 0;
+}
+
+.avine-theme .service-section .service-inner:hover:before {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.avine-theme .service-inner .fbox-number {
+    position: absolute;
+    font-size: 22px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    right: 10px;
+    font-weight: 600;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    border-radius: 50px;
+	text-align: center;
+	opacity: 0.3;
+}
+
+.avine-theme .service-inner:hover .fbox-number {
+    opacity: 1;
+}
+
+.avine-theme .service-inner .service-icon-img-wrap i {
+    color: var(--bs-white);
+}
+
+.avine-theme .service-inner .service-title a::before {
+	display:none;
+}
+
+.avine-theme .btn {
+    border-radius: 50px !important;
+}
+
+.btn-style-three .btn.btn-primary {
+    transition: 0s;
+}
+
+.btn-style-three .btn:before, .btn-style-three .btn:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 0%;
+  background-color: var(--bs-white);
+  z-index: -1;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.btn-style-three .btn:before {
+  left: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+.btn-style-three .btn:after {
+  right: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+.btn-style-three .btn:hover,
+.btn-style-three .btn:focus {
+  color: var(--bs-secondary);
+  box-shadow: none;
+}
+
+.btn-style-three .btn:hover::before, .btn-style-three .btn:hover:after,
+.btn-style-three .btn:focus::before, .btn-style-three .btn:focus:after {
+  width: 51%;
+  border-radius: 0;
+}
+
+.avine-theme .btn.btn-like-icon {
+    padding-right: 2.75rem;
+}
+
+.sidebar h2.wp-block-heading {
+    position: relative;
+    margin-bottom: 0;
+    padding: 16px 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--bs-white);
+    overflow: hidden;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: var(--bs-secondary);
+    border-left: 4px solid var(--bs-primary);
+    border-right: 4px solid var(--bs-primary);
+}
+
+.footer-main .widget .wp-block-heading {
+    color: var(--bs-white);
+    margin-bottom: 1.375rem;
+    padding-bottom: 15px;
+    position: relative;
+    font-size: 1.25rem;
+}
+
+.footer-main .widget .wp-block-heading:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: -40px;
+    margin: auto;
+    width: 35px;
+    height: 2px;
+    background-color: var(--bs-primary);
+}
+
+.footer-main .widget .wp-block-heading::first-letter {
+    color: var(--bs-primary);
+}
+
+.footer-main .textwidget address a {
+    text-decoration: none;
+}
+
+.post-date:focus-within:before {
+    background: var(--bs-secondary) !important;
+}
